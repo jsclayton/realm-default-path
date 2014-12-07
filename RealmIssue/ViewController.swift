@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         println("[ViewController.viewDidLoad] Default realm path set to \(RLMRealm.defaultRealmPath())")
         println("[ViewController.viewDidLoad] Default realm instance path is \(RLMRealm.defaultRealm().path)")
 
+        // This has the wrong path!
         println("[ViewController.viewDidLoad] Default realm variable path is \(realm.path)")
     }
 
