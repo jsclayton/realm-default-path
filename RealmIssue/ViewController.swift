@@ -11,7 +11,8 @@ import Realm
 
 class ViewController: UIViewController {
 
-    let realm = RLMRealm.defaultRealm()
+    var variableRealm = RLMRealm.defaultRealm()
+    let constantRealm = RLMRealm.defaultRealm()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +21,8 @@ class ViewController: UIViewController {
         println("[ViewController.viewDidLoad] Default realm instance path is \(RLMRealm.defaultRealm().path)")
 
         // This has the wrong path!
-        println("[ViewController.viewDidLoad] Default realm variable path is \(realm.path)")
+        println("[ViewController.viewDidLoad] Default realm variable path is \(variableRealm.path)")
+        println("[ViewController.viewDidLoad] Default realm constant path is \(constantRealm.path)")
     }
 
 }
